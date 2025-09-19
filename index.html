@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя дорогая мамочка!</title>
+    <style>
+        body {
+            background-color: #e5a6ab6f;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffb5ba;
+            animation: glowText 2s infinite alternate;
+        }
+
+        p {
+            color:#db6a72 ;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 80%;
+            margin: auto;
+            animation: slideIn 3s ease-in-out;
+        }
+
+        img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: pulseImage 2s infinite alternate;
+        }
+
+        /* Ключевая анимация текста с мерцанием */
+        @keyframes glowText {
+            from {color: #ffb5ba;}
+            to {color: #ff7c8f;}
+        }
+
+        /* Появление текста */
+        @keyframes slideIn {
+            from {transform: translateX(-50px); opacity: 0;}
+            to {transform: translateX(0); opacity: 1;}
+        }
+
+        /* Пульсация тени у изображения */
+        @keyframes pulseImage {
+            from {box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+            to {box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);}
+        }
+
+        /* Мобильная версия (экраны меньше 600 пикселей) */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Моя дорогая мамочка!</h1>
+    <img src="мама.jpg" alt="Портрет мамы">
+    <p>
+        Сегодня волшебный миг наступил — сияет звезда твоего Дня рождения! Я хочу подарить тебе самое дорогое сокровище моей души — пожелание крепчайшего здоровья, истинного счастья и чистой бескрайней любви. Представляю, как волны радости омывают твои дни, огоньки тепла согревают тебя, словно солнечный лучик пробуждает яркие мгновения, заставляя их переливаться всеми цветами радуги.
+    </p>
+    <p>
+        Твоя добрая душа и мудрое сердце дали мне крылья, чтобы лететь навстречу мечтам, научили меня ценить каждое мгновенье и верить в лучшее. Пусть в каждом рассвете будут зарождаться новые желания, воплощаясь в реальность, подобно цветущим садам весной, а душа твоя будет вечно молодой и свободной от печали.
+    </p>
+    <p>
+        Спасибо тебе за нежное прикосновение рук, за ласковый голос, нашёптывавший колыбельные песни, за улыбку, озаряющую мой путь. Ты — источник света, который всегда направляет меня вперёд.
+    </p>
+    <p>
+        Поздравляю тебя, родная моя, с чудеснейшим днём твоей жизни!
+    </p>
+
+    <audio id="audioPlayer" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
